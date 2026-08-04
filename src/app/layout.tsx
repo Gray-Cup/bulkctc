@@ -161,6 +161,11 @@ export default function RootLayout({
               name: "BulkCTC",
               legalName: "Gray Cup Enterprises Private Limited",
               url: "https://bulkctc.com",
+              parentOrganization: {
+                "@type": "Organization",
+                "@id": "https://graycup.in/#organization",
+                name: "Gray Cup",
+              },
               logo: {
                 "@type": "ImageObject",
                 url: "https://bulkctc.com/logo.png",
@@ -190,6 +195,23 @@ export default function RootLayout({
               },
               areaServed: "IN",
               additionalType: "http://www.productontology.org/id/Wholesaler",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://graycup.in/#organization",
+              name: "Gray Cup",
+              url: "https://graycup.in",
+              logo: "https://graycup.in/logo.png",
+              sameAs: [
+                "https://www.instagram.com/thegraycup",
+                "https://www.linkedin.com/company/gray-cup",
+              ],
             }),
           }}
         />
